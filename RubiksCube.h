@@ -110,6 +110,10 @@ public:
         }
     }
 
+    virtual RubiksCube &move(MOVE temp)=0;
+
+    virtual RubiksCube &invert(MOVE temp)=0;
+
     virtual void print() const=0;
 
     virtual bool is_solved() const=0;
